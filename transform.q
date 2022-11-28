@@ -5,8 +5,8 @@
 
 basic:{
     [n]
-    samples: $[mod[n;2]=1;("i"$((n+1)%2)) cut (n+1)?1.0;("i"$(n%2)) cut n?1.0];
-    Z0: cos[(theta: 2*3.14159265*samples[1])] * R: sqrt[-2 * log[samples[0]]];
+    samples: $[mod[n;2]=1;ceiling((n+1)%2) cut (n+1)?1.0;"J"$(n%2) cut n?1.0];
+    Z0: cos[(theta: 2*3.14159265*samples[1])] * R: sqrt[-2 * log[samples 0]];
      Z1: sin[theta] * R;
       : Z0, Z1
      }
