@@ -23,8 +23,8 @@ polar: {[n]
   }
 // driver code
 1 "functions: basic, polar\n-----------------------------------------------\n";
-1 "basic: 2 values ranges from 0 to 1\n";
-1 "polar: 2 values ranges from -1 to 1\n\n";
+1 "basic: number of random number create\n";
+1 "polar: number of random number create\n\n";
 input:{-2 x; read0 0}
 method: input"Choose a transform type: ";
 -2 "\n", method, " transform:\n";
