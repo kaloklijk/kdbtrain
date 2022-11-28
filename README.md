@@ -7,8 +7,8 @@ Example:
 
 functions: basic, polar
 -----------------------------------------------
-basic: 2 values ranges from 0 to 1
-polar: 2 values ranges from -1 to 1
+basic: number of random number create
+polar: number of random number create
 
 Choose a transform type:
 basic
