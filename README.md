@@ -1,5 +1,6 @@
 # kdbtrain
 Box-Muller Transform in kdb.
+Allow changes
 
 Example:
 
