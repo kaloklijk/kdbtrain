@@ -1,5 +1,7 @@
 # kdbtrain
-Box-Muller Transform in kdb
+Box-Muller Transform in kdb.
+
+Example:
 
 ```diff
 
