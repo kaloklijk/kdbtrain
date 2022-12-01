@@ -25,8 +25,13 @@ d) function
     u: samples[0];
     v: samples[1];
     s: (u*u)+v*v;
-    
-    z0: u*sqrt[(t:-2 * log[s]%s)];
+    ind: where (s>=1) or s=0;
+    while[0<>count ind;
+    s[ind]: (u[ind]*(u[ind]: -1+count[ind]?2.0))+v[ind]*(v[ind]: -1+count[ind]?2.0);
+    ind: ind[where (s[ind] > 1) or s[ind]=0];
+    ]
+    t: -2 * (log[s]%s);
+    z0: u*sqrt[t];
     z1: v*sqrt[t];
     : z0, z1
   }
