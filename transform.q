@@ -16,7 +16,11 @@ polar: {[n]
     u: samples[0];
     v: samples[1];
     s: (u*u)+v*v;
-    
+    ind: where (s>1) or (s: (u*u)+v*v)=0;
+    while[0<>count ind;
+    s[ind]: u[ind]*(u[ind]: -1+count[ind]?2.0)+v[ind]*(v[ind]: -1+count[ind]?2.0);
+    ind: ind[where (s[ind] > 1) or s[ind]=0];
+    ]
     z0: u*sqrt[(t:-2 * log[s]%s)];
     z1: v*sqrt[t];
     : z0, z1
