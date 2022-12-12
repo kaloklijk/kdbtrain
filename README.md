@@ -1,5 +1,5 @@
 # kdbtrain
-Box-Muller Transform in kdb.
+Box-Muller Transform and discrete SDE in kdb.
 
 Example:
 
@@ -23,3 +23,9 @@ Creating 100000 random numbers:
 exec time:
 3
 ```
+discrete SDE
+```
+.kaloklijk.path[100;100;0.01*til 101; 0; 1]  --> create 100 random path by N(0, 1) with initial value X0 = 100 
+                                                 and save it in local dir
+```
+![image](https://user-images.githubusercontent.com/75416686/207037152-98a0b845-1e8d-42e7-a0aa-11394aac86e9.png)
