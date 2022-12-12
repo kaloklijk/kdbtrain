@@ -33,8 +33,8 @@ discretSDE: {[X0;t;a;b]
 //Wiener 0, 0.01*1+til 100
 
 paths:{[n;X0;t;a;b]
-	files: `$' "result",/: ((string') til n);
-	dir: `$' "result",/: ((string') til n),\: ".csv";
+	files: `$' f: "result",/: (string') til n;
+	dir: `$' f,\: ".csv";
 	files set' discretSDE[X0;t;a;] each n#b;
 	(save') dir;
  }
