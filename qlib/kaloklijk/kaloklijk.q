@@ -57,8 +57,8 @@ d) function
  generate paths with Wiener process
  q) .kaloklijk.Wiener 0.01*til 101
 
-discretSDE: {[X0;t;a;b]
-                dW:: 1_ W - prev W: Wiener t;
+.kaloklijk.discretSDE: {[X0;t;a;b]
+                dW:: 1_ W - prev W: .kaloklijk.Wiener t;
                 ct: -1+count t;
                 yj:: enlist "f"$X0;
                 dt:: 1_t-prev t;
